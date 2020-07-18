@@ -7,22 +7,22 @@ public class Result {
 
     private boolean flag;
     private Integer code;
-    private String message;
+    private String msg;
     private Object data;
 
     public Result() {
     }
 
-    public Result(boolean flag, Integer code, String message) {
+    public Result(boolean flag, Integer code, String msg) {
         this.flag = flag;
         this.code = code;
-        this.message = message;
+        this.msg = msg;
     }
 
-    public Result(boolean flag, Integer code, String message, Object data) {
+    public Result(boolean flag, Integer code, String msg, Object data) {
         this.flag = flag;
         this.code = code;
-        this.message = message;
+        this.msg = msg;
         this.data = data;
     }
 
@@ -42,12 +42,12 @@ public class Result {
         this.code = code;
     }
 
-    public String getMessage() {
-        return message;
+    public String getMsg() {
+        return msg;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public void setMsg(String msg) {
+        this.msg = msg;
     }
 
     public Object getData() {

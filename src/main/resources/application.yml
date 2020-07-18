@@ -2,10 +2,11 @@ server:
   port: 8888
   servlet:
     context-path: /
-
 swagger:
   enabled: true
 spring:
+  profiles:
+    active: dev
   application:
     name: personal_blog
   jackson:

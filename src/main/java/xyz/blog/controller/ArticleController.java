@@ -19,8 +19,8 @@ public class ArticleController {
     private ArticleService articleService;
 
     @GetMapping()
-    public Result findAll() {
-        Page<Article> article = articleService.findAll();
+    public Result findAll(String typeId) {
+        Page<Article> article = articleService.findAll(typeId);
         return new Result(true, StatusCode.OK, "查询成功", article);
     }
 

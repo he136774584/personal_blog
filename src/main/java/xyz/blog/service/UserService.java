@@ -5,7 +5,7 @@ import xyz.blog.entity.User;
 
 public interface UserService {
 
-    Page<User> findAll();
+    Page<User> findAll(Integer current, Integer size);
 
     User findById(String id);
 

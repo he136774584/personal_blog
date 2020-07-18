@@ -1,0 +1,6 @@
+2020-06-21 17:38:27.134 WARN  --- [http-nio-8888-exec-4] com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-06-21 17:50:10.581 WARN  --- [http-nio-8888-exec-2] com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-06-21 18:51:00.150 WARN  --- [http-nio-8888-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.RuntimeException: 令牌不正确！]
+2020-06-21 18:57:17.987 WARN  --- [http-nio-8888-exec-1] com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-06-21 19:10:42.085 WARN  --- [http-nio-8888-exec-1] com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-06-21 19:25:18.763 WARN  --- [http-nio-8888-exec-1] com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.

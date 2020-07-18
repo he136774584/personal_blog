@@ -20,10 +20,10 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
 
     @Override
-    public Page<User> findAll(){
+    public Page<User> findAll(Integer current, Integer size){
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
         queryWrapper.select(User.class, info -> !info.getColumn().equals("password"));
-        Page<User> user=userMapper.selectPage(new Page<>(1,10), queryWrapper);
+        Page<User> user=userMapper.selectPage(new Page<>(current,size), queryWrapper);
         return user;
     }
 

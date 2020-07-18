@@ -20,8 +20,10 @@ public class UserController {
 
     @ApiOperation(value = "用户列表", notes="获取用户列表")
     @GetMapping()
-    public Result findAll(){
-        Page<User> page = userService.findAll();
+    public Result findAll(
+            @RequestParam(value = "current",required = false,defaultValue = "1") Integer current,
+            @RequestParam(value = "pageSize",required = false,defaultValue = "10") Integer pageSize){
+        Page<User> page = userService.findAll(current, pageSize);
         return new Result(true, StatusCode.OK,"查询成功",page) ;
     }
 

@@ -1,5 +1,6 @@
 package xyz.blog.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,8 +16,12 @@ public class ArticleServiceImpl implements ArticleService {
     @Autowired
     private ArticleMapper articleMapper;
     @Override
-    public Page<Article> findAll() {
-        Page<Article> article = articleMapper.selectPage(new Page<>(1, 10), null);
+    public Page<Article> findAll(String typeId) {
+        QueryWrapper<Article> queryWrapper = new QueryWrapper<>();
+        if(typeId !=null && typeId != ""){
+            queryWrapper.eq("type_id", typeId);
+        }
+        Page<Article> article = articleMapper.selectPage(new Page<>(1, 10), queryWrapper);
         return article;
     }
 

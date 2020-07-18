@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import xyz.blog.entity.Article;
 
 public interface ArticleService {
-    Page<Article> findAll();
+    Page<Article> findAll(String typeId);
 
     Article findById(String id);
 

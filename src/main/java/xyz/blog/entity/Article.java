@@ -14,8 +14,8 @@ public class Article {
     private String title;
     private String introduce;
     private String content;
-    private String type;
-    private String cover_img;
+    private String typeId;
+    private String coverImg;
     private Date createTime;
     private Date updateTime;
 }
